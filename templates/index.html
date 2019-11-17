@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MarineDrone Control Panel</title>
+</head>
+<body>
+    <form method="post" action="/orders">
+        <h3>Atualizar Valores</h3>
+        <input type="number" name="units" placeholder="Kg" min="0"><br>
+        <input type="number" name="month" placeholder="Mês" min="1" max="12"><br>
+        <input type="submit" name="submit" placeholder="Enviar">
+    </form>
+    <form method="post" action="/message">
+        <h3>Enviar nova mensagem</h3>
+        <input type="text" name="name" placeholder="Nome"><br>
+        <textarea  name="message" placeholder="Mensagem"></textarea><br>
+        <input type="submit" name="submit" placeholder="Publicar">
+    </form>
+    <form method="post" action="/customer">
+        <h3>Adicionar novo Alerta</h3>
+        <input type="text" name="type" placeholder="Tipo de Alerta"><br>
+        <input type="text" name="latitude" placeholder="Latitude"><br>
+        <input type="text" name="longitude" placeholder="Longitude"><br>
+        <input type="number" name="level" placeholder="Nível" min="1" max="10"><br>
+        <input type="submit" name="submit" placeholder="Novo Alerta">
+    </form>
+</body>
+</html>
