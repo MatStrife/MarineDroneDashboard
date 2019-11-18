@@ -9,7 +9,7 @@ key='ebecb475b0e0940aa78d',
 secret='9a6a44809b0fdc61a374',
 cluster='us2',
 ssl=True)
-@app.route('/')
+@app.route('/index.html')
 def index():
     return render_template('index.html')
 @app.route('/dashboard')
